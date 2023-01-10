@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+.dark-theme {
+  --main-bg: #3B3B3B;
+  --secondary-bg: #2B2B2B;
+  --primary: #A259FF;
+  --white: #fff;
+  --white-theme: #fff;
+  --gray1: #858584;
+  --sidebar: #2B2B2B;
+  --transition: 0.5s ease all
+}
+
+.light-theme {
+  --main-bg: #f4f4f4;
+  --secondary-bg: #2B2B2B;
+  --primary: #A259FF;
+  --header-bg: #04203a;
+  --single-movie:#04203a;
+  --sidebar: #04203a;
+  --white: #fff;
+  --white-theme: #2B2B2B;
+  --border:1px solid black;
+  --transition: 0.5s ease all
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-bg);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin responsive-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@mixin ul-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text-limit1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; // put the number of lines
+  -webkit-box-orient: vertical;
+}
+
+@mixin btn-unstyled {
+  background-color: transparent;
+  border: none;
+}
+
+// inputs
+.input {
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-regular {
+  height: 40px;
+}
+
+// buttons
+.btn {
+  border: none;
+  border-radius: 20px;
+  min-width: 80px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-regular {
+  height: 32px;
+  padding: 0 16px;
+}
+
+.btn-contained {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-contained:hover {
+  background-color: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+// General classes
+.active-link {
+  color: var(--primary) !important;
+}
+
+.loading {
+  text-align: center;
+  color: var(--white-theme);
+  font-size: 28px;
+  padding-top: 40px;
+}
+
+.favorites-sec>.container{
+  padding-top: 40px;
+  padding-bottom: 80px;
+}

@@ -1,0 +1,114 @@
+@media(min-width:900px)and (max-width:1000px) {
+    .movie-poster img {
+        height: 300px
+    }
+}
+
+@media(max-width:900px) {
+    .movie-poster img {
+        height: 320px
+    }
+
+    .movie-content {
+        display: none;
+    }
+   
+
+}
+@media(min-width:767.1px){
+    .single-movie .MuiGrid-item{
+        padding: 0!important;
+       }
+}
+@media(max-width:767px) {
+    .movie-poster img {
+        height: 280px
+    }
+
+    .movie-content {
+        padding: 10px 6px 10px 10px;
+    }
+
+    .movie-title,
+    .movie-vote_average {
+        font-size: 14px;
+    }
+
+    .movie-vote_average svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 2px;
+    }
+
+    .favorite-btn {
+        width: 32px;
+        height: 32px;
+
+        svg {
+            font-size: 20px;
+        }
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+    .logo-cover h4{
+        font-size: 20px;
+    }
+    .single-movie-content >*{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .single-movie-title{
+        margin-top: 0;
+    }
+    .no-movie{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 660px) {
+    .movie-poster img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 590px) {
+   
+    .single-movie {
+        max-width: 370px;
+
+        .single-movie-poster {
+            height: 460px;
+        }
+    }
+
+    .movie-poster img {
+        height: 320px;
+    }
+
+    .input-regular {
+        height: 32px;
+    }
+    .logo {
+        width: 28px;
+        height: 28px;
+    }
+    .logo-cover h4{
+        font-size: 18px;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .movie-poster img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 400px) {
+    .movie-poster img {
+        height: 250px;
+    }
+}

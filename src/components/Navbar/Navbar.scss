@@ -1,0 +1,59 @@
+@import "../../App.scss";
+
+.main-header {
+    background-color: var(--header-bg);
+    padding: 16px 0;
+    a {
+        text-decoration: none;
+        color: var(--white)
+    }
+    border-bottom: 1px solid #f5f5f5
+}
+
+.logo-cover {
+    @include flex-center;
+
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 16px;
+    }
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+
+    img {
+        @include responsive-img
+    }
+}
+
+.menu-list {
+    @include ul-unstyled;
+
+    li {
+        display: inline-block;
+        margin-left: 30px;
+
+        a:hover {
+            transition: var(--transition);
+            color: var(--primary);
+        }
+    }
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    .mode-btn{
+        margin-left: 60px;
+    }
+}
+.menu-btn{
+    display: none;
+}
+
+.mobile-sidebar{
+    display: none;
+}

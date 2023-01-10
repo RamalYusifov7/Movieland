@@ -1,0 +1,36 @@
+@import "../../App.scss";
+.searchbar-section {
+    padding: 40px 0 60px;
+}
+
+.search-wrapper {
+    max-width: 440px;
+    margin: auto;
+
+    button {
+        margin-left: 12px;
+    }
+    input{
+        border: var(--border);
+    }
+}
+
+
+
+@media(max-width:900px) {
+    .searchbar-section {
+        padding: 32px 0 42px;
+    }
+}
+
+@media(max-width:767px) {
+    .searchbar-section {
+        padding: 28px 0 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .searchbar-section {
+        padding: 24px 0 16px;
+    }
+}
